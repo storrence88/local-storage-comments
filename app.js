@@ -24,6 +24,8 @@ const appendComment = (e) => {
 
   e.preventDefault();
 
+  if (commentInput.value.length < 1) return; 
+
   template(data);
 }
 
